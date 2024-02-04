@@ -7,15 +7,5 @@ spring:
     hibernate:
       ddl-auto: create-drop
 
-management:
-  metrics:
-    export:
-      prometheus:
-        enabled: true
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-  endpoint:
-    health:
-      show-details: "always"
+client:
+  url: http://localhost:8080
